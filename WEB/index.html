@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào mừng đến với OCR-AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200;8..60,400;8..60,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="hero-section" id="main">
+        <div class="overlay"></div>
+
+        <img src="img/img1.jpg" alt="OCR-AI Project Background" class="bg-image" id="bg-img">
+
+        <header class="navbar">
+            <div class="logo">OCR-AI</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#main" class="active">Main</a></li>
+                    <li><a href="#ocr">OCR</a></li>
+                    <li><a href="#ai">AI</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="ocr" class="placeholder-section">
+        <h2>Chuyển đổi PDF sang Markdown</h2>
+        <div class="upload-container">
+            <p>Tải lên file PDF để OCR-AI xử lý thành định dạng Markdown.</p>
+            <input type="file" id="pdf-file" accept=".pdf">
+            <button id="convert-btn">Bắt Đầu Phân Tích</button>
+        </div>
+        
+        <div id="result-container" style="display: none; text-align: center; margin-top: 20px;">
+            <p id="convert-status" style="font-style: italic; margin-bottom: 15px;">Đang xử lý...</p>
+            <a id="download-link" href="#" style="display: none; color: #fff; border: 1px solid #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none;">Tải file Markdown</a>
+        </div>
+    </section>
+    <section id="ai" class="placeholder-section ai-research-section">
+        <div class="ai-container">
+            <div class="ai-header">
+                <h2>Hỏi Đáp & Phân Tích Tài Liệu</h2>
+                <p class="subtitle">Kéo thả file PDF hoặc Markdown (.md) trực tiếp vào khung chat để phân tích kiến thức</p>
+            </div>
+            
+            <div class="gemini-chat-wrapper" id="drop-zone">
+                <div class="drag-overlay" id="drag-overlay">
+                    <div class="overlay-content">
+                        <span>Thả file tại đây để tải lên AI Agent</span>
+                    </div>
+                </div>
+
+                <div id="chat-box" class="chat-display">
+                    <div class="ai-msg">Xin chào! Bạn có thể kéo thả file PDF (để OCR) hoặc file Markdown (.md) vào đây, sau đó yêu cầu tôi tóm tắt hoặc phân tích sâu dữ liệu nhé!</div>
+                </div>
+
+                <div class="gemini-input-container">
+                    <div class="attachment-preview-area" id="preview-area" style="display: none;">
+                        <div class="file-card">
+                            <span class="file-icon"></span>
+                            <div class="file-info">
+                                <span id="preview-file-name" class="file-name">document.pdf</span>
+                                <span id="preview-file-status" class="file-status">Sẵn sàng phân tích</span>
+                            </div>
+                            <button type="button" id="remove-file-btn" class="remove-btn">&times;</button>
+                        </div>
+                    </div>
+
+                    <div class="gemini-input-row">
+                        <label for="gemini-file-input" class="attach-btn" title="Đính kèm file"></label>
+                        <input type="file" id="gemini-file-input" accept=".pdf,.md" style="display: none;">
+                        
+                        <input type="text" id="user-input" placeholder="Hỏi AI Agent về tài liệu này hoặc nhập tin nhắn...">
+                        <button id="send-btn" class="gemini-send-btn">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
