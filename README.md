@@ -8,6 +8,7 @@ Link demo web: https://youtu.be/78zRLF5UaPo
 
 Link bộ dữ liệu dùng để demo web: https://www.kaggle.com/datasets/danghiennguyen/arxiv-pdf-small
 
+Link slide: https://drive.google.com/file/d/1--T_Clp6USmF15x2dttVFHoI-mq3jTP1/view?usp=sharing 
 
 ## Tổng quan bài toán
 Đây là hệ thống Chuyển đổi file tài liệu định dạng PDF sang định dạng Markdown có cấu trúc. Hệ thống có thể nhận diện được tiêu đề, đoạn văn, và quan trọng nhất là các biểu thức toán học phức tạp mà không làm gãy phông hoặc sai lệch ký tự. 
