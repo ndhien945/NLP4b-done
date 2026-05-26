@@ -1,7 +1,11 @@
 Link: https://www.kaggle.com/code/danghiennguyen/raw-success
+
 Github: https://github.com/ndhien945/NLP4b-done
-Link bộ dữ liệu dùng để đánh giá: https://www.kaggle.com/datasets/danghiennguyen/arxiv-pdf-big 
+
+Link bộ dữ liệu dùng để đánh giá: https://www.kaggle.com/datasets/danghiennguyen/arxiv-pdf-big
+
 Link demo web: https://youtu.be/78zRLF5UaPo
+
 Link bộ dữ liệu dùng để demo web: https://www.kaggle.com/datasets/danghiennguyen/arxiv-pdf-small
 
 
