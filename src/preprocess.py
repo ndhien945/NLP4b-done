@@ -36,7 +36,7 @@ def get_preprocess_function(content_col):
                 labels.append(tokenized_text)
                 
             except Exception as e:
-                print(f"Bỏ qua mẫu {arxiv_id} do lỗi đọc/phân tích file: {e}")
+                print(f"Skip {arxiv_id}: {e}")
                 continue
                 
         return {"pixel_values": pixel_values, "labels": labels}

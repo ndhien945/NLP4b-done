@@ -24,9 +24,9 @@ def load_and_split_data():
         'test': test_dataset
     })
     
-    print(f"Train: {len(final_datasets['train'])} mẫu")
-    print(f"Valid: {len(final_datasets['valid'])} mẫu")
-    print(f"Test: {len(final_datasets['test'])} mẫu")
+    print(f"Train: {len(final_datasets['train'])} samples")
+    print(f"Valid: {len(final_datasets['valid'])} samples")
+    print(f"Test: {len(final_datasets['test'])} samples")
     
     return final_datasets
 
