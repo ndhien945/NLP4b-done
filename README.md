@@ -24,6 +24,11 @@ pipreqs . --force
 pip install -r requirements.txt
 ```
 
+Sau đó, ta sẽ khởi chạy các file python:
+```python
+python <các_file>.py
+```
+
 Về phần Web, em đã tổng hợp các file thành một file ai-agentic.ipynb để dễ tạo tunnel từ Kaggle nhằm kết với với web ở Visual Studio Code.
 Để thuận tiện hơn, ta có thể cài thêm extension Live Server để hỗ trợ deploy web.
 
